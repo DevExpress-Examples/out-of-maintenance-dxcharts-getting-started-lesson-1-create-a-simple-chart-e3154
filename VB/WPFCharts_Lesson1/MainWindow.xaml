@@ -1,0 +1,40 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" 
+        x:Class="WPFCharts_Lesson1.MainWindow"
+        Title="MainWindow" Height="503.731" Width="687.687">
+    <Grid>
+        <dxc:ChartControl>
+            <dxc:ChartControl.Titles>
+                <dxc:Title Content="My Title"/>
+            </dxc:ChartControl.Titles>
+            <dxc:ChartControl.CrosshairOptions>
+                <dxc:CrosshairOptions ShowArgumentLabels="True" ShowValueLabels="True" ShowValueLine="True"/>
+            </dxc:ChartControl.CrosshairOptions>
+            <dxc:ChartControl.Legend>
+                <dxc:Legend/>
+            </dxc:ChartControl.Legend>
+            <dxc:XYDiagram2D>
+                <dxc:BarSideBySideSeries2D DisplayName="Series 1" LabelsVisibility="True">
+                    <dxc:BarSideBySideSeries2D.Model>
+                        <dxc:Quasi3DBar2DModel/>
+                    </dxc:BarSideBySideSeries2D.Model>
+                    <dxc:SeriesPoint Argument="A" Value="1"/>
+                    <dxc:SeriesPoint Argument="B" Value="2"/>
+                    <dxc:SeriesPoint Argument="C" Value="3"/>
+                    <dxc:SeriesPoint Argument="D" Value="4"/>
+                </dxc:BarSideBySideSeries2D>
+                <dxc:BarSideBySideSeries2D LabelsVisibility="True" DisplayName="Series 2">
+                    <dxc:BarSideBySideSeries2D.Model>
+                        <dxc:Quasi3DBar2DModel/>
+                    </dxc:BarSideBySideSeries2D.Model>
+                    <dxc:SeriesPoint Argument="A" Value="4"/>
+                    <dxc:SeriesPoint Argument="B" Value="3"/>
+                    <dxc:SeriesPoint Argument="C" Value="2"/>
+                    <dxc:SeriesPoint Argument="D" Value="1"/>
+                </dxc:BarSideBySideSeries2D>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl>
+    </Grid>
+</Window>
