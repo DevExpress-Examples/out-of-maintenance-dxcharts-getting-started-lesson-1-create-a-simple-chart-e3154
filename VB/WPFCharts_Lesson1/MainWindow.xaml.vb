@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.Windows
+﻿Imports System.Windows
 
 Namespace WPFCharts_Lesson1
 	''' <summary>
@@ -7,6 +6,7 @@ Namespace WPFCharts_Lesson1
 	''' </summary>
 	Partial Public Class MainWindow
 		Inherits Window
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
